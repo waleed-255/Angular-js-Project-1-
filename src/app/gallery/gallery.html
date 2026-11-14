@@ -1,0 +1,48 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="d-flex justify-content-center">
+    <button class="m-1 btn btn-primary">All</button>
+    <button class="m-1 btn btn-primary" (click)="showtrees()">Trees</button>
+    <button class="m-1 btn btn-primary" (click)="showlandscapes()">Landcscapes</button>
+    <button class="m-1 btn btn-primary"(click)="showGhaas()">showGhaas</button>
+    <button class="m-1 btn btn-primary"(click)="showallpictures()">showall</button>
+
+</div>
+<div class="container mt-4">
+  <div class="row">
+
+    <div class="col-lg-4"  *ngIf="showtree"> 
+      <div class="card">
+        <img src="assets/img/gallery/gallery-1.webp" class="card-img-top">
+        <div class="card-body">
+          <h4 class="card-title">Title</h4>
+          <p class="card-text">Text</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4" *ngIf="showlandscape">
+      <div class="card">
+        <img src="assets/img/gallery/gallery-2.webp" class="card-img-top">
+        <div class="card-body">
+          <h4 class="card-title">Title</h4>
+          <p class="card-text">Text</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4" *ngIf="showghaas">
+      <div class="card">
+        <img src="assets/img/gallery/gallery-3.webp" class="card-img-top">
+        <div class="card-body">
+          <h4 class="card-title">Title</h4>
+          <p class="card-text">Text</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
